@@ -1,0 +1,92 @@
+[
+    {
+        "question" : "Who Is the owner of ChatGPT?",
+        "options" : [
+            "Elon Musk",
+            "Larry Page",
+            "Open AI",
+            "W3 schools"
+        ],
+        "answer" : 2
+    },
+    {
+        "question" : "What version is the latest version of Python?",
+        "options" : [
+            "v3.01",
+            "v3.11",
+            "v5.07",
+            "v1.12"
+        ],
+        "answer" : 1
+    },
+    {
+        "question" : "What version is the latest version of Java?",
+        "options" : [
+            "v12.01",
+            "v23.11",
+            "v5.07",
+            "v7.12"
+        ],
+        "answer" : 3
+    },
+    {
+        "question" : "Which of the following is a scripting language?",
+        "options" : [
+            "Javascript",
+            "Typescript",
+            "PHP",
+            "Python"
+        ],
+        "answer" : 2
+    },
+    {
+        "question" : "Which of the following is not a framework?",
+        "options" : [
+            "React",
+            "Laravel",
+            "Angular",
+            "Java"
+        ],
+        "answer" : 3
+    },
+    {
+        "question" : "Python syntax uses indentation?",
+        "options" : [
+            "True",
+            "False",
+            "Maybe",
+            "I dont know"
+        ],
+        "answer" : 0
+    },
+    {
+        "question" : "jQuery is for mainly for styling?",
+        "options" : [
+            "True",
+            "False",
+            "Maybe",
+            "I dont know"
+        ],
+        "answer" : 0
+    },
+    {
+        "question" : "8 * 10 - 70",
+        "options" : [
+            "20",
+            "-540",
+            "10",
+            "0"
+        ],
+        "answer" : 2
+    },
+    {
+        "question" : "Bootstrap latest version is ?",
+        "options" : [
+            "v3.01",
+            "v4.00",
+            "v5.00",
+            "v9.21"
+        ],
+        "answer" : 2
+    }
+]

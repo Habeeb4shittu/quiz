@@ -1,0 +1,136 @@
+.quiz {
+    display      : grid;
+    place-items  : center;
+    width        : 85%;
+    max-height   : 90%;
+    overflow-y   : auto;
+    max-width    : 20rem;
+    padding      : calc($rad / 2);
+    border-radius: calc($rad / 4);
+    background   : lighten($color: $bg, $amount: 15%);
+
+    .finished {
+        width  : 100%;
+        display: flex;
+        gap    : .2rem;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .head {
+        width         : 100%;
+        display       : flex;
+        flex-direction: column;
+        align-items   : end;
+
+        .number {
+            align-self: start;
+        }
+
+        .number,
+        .score {
+            border       : 2px groove $text;
+            padding      : 0rem .5rem;
+            background   : lighten($color: $bg, $amount: 10%);
+            border-radius: .2rem;
+            color        : $text;
+        }
+    }
+
+    .question,
+    .answers {
+        width: 100%;
+    }
+
+    .question {
+
+        h3 {
+            color      : $text;
+            font-weight: 700;
+            font-size  : 1.4rem;
+        }
+
+        h4 {
+            color      : $text;
+            font-weight: 500;
+            font-size  : 1.1rem;
+        }
+    }
+
+    .answers {
+        display    : grid;
+        place-items: center;
+        gap        : .5rem;
+        transition : 1s;
+        overflow   : hidden;
+
+        &.done {
+            height: 0;
+        }
+
+        button {
+            width             : 100%;
+            display           : flex;
+            // justify-content: space-between;
+            gap               : 1.5rem;
+            align-items       : center;
+            padding           : 0 .5rem;
+            border-radius     : calc($rad - 45px);
+            height            : 3rem;
+            padding-left      : 0;
+            border            : none;
+            overflow          : hidden;
+            color             : $bg;
+            background        : lighten($color: $bg, $amount: 40%);
+            transition        : 1s;
+            animation         : fade 1s;
+
+            @keyframes fade {
+                from {
+                    opacity  : .4;
+                    transform: translateX(-10%);
+                }
+
+                to {
+                    opacity  : 1;
+                    transform: translateX(0);
+                }
+            }
+
+            &.correct {
+                background: $success;
+
+                &:hover {
+                    background: lighten($color: $success, $amount: 5%);
+                    color     : lighten($color: $bg, $amount: 80%);
+                }
+            }
+
+            &.wrong {
+                background: $danger;
+
+                &:hover {
+                    background: lighten($color: $danger, $amount: 5%);
+                    color     : lighten($color: $bg, $amount: 80%);
+                }
+            }
+
+            &:hover {
+                background: lighten($color: $bg, $amount: 30%);
+                color     : lighten($color: $bg, $amount: 80%);
+            }
+
+            .no {
+                height         : 100%;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                background     : $bg;
+                color          : $text;
+                width          : 15%;
+            }
+        }
+    }
+}
