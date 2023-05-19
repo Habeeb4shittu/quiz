@@ -22,7 +22,7 @@ export function setPage() {
     `)
     $("main").empty().append(content)
     $(".finished").hide()
-    $.get("../../js/questions.json", null, null,
+    $.get("../../js/qs.json", null, null,
         "JSON"
     ).done((res) => {
         let count = res.sort(() => Math.random() - 0.5).slice(0, 5)
